@@ -4,7 +4,7 @@ rrule.js
 **Library for working with recurrence rules for calendar dates.**
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][ci-image]][ci-url]
 [![js-standard-style][js-standard-image]][js-standard-url]
 [![Downloads][downloads-image]][downloads-url]
 [![Gitter][gitter-image]][gitter-url]
@@ -246,7 +246,7 @@ new RRule({
   until: new Date(2018, 2, 31)
 }).all()
 
-[ '2018-02-01T18:30:00.000Z' ]
+[ '2018-02-01T18:30:00.000Z', '2018-03-01T18:30:00.000Z' ]
 
 // RIGHT: Will produce dates with recurrences at the correct time
 new RRule({
@@ -255,7 +255,7 @@ new RRule({
   until: new Date(Date.UTC(2018, 2, 31))
 }).all()
 
-[ '2018-02-01T10:30:00.000Z' ]
+[ '2018-02-01T10:30:00.000Z', '2018-03-01T10:30:00.000Z' ]
 ```
 
 ### API
@@ -808,8 +808,8 @@ more details.
 [npm-url]: https://npmjs.org/package/rrule
 [npm-image]: http://img.shields.io/npm/v/rrule.svg
 
-[travis-url]: https://travis-ci.org/jakubroztocil/rrule
-[travis-image]: http://img.shields.io/travis/jakubroztocil/rrule.svg
+[ci-url]: https://github.com/jakubroztocil/rrule/actions
+[ci-image]: https://github.com/jakubroztocil/rrule/workflows/Node%20CI/badge.svg
 
 [downloads-url]: https://npmjs.org/package/rrule
 [downloads-image]: http://img.shields.io/npm/dm/rrule.svg?style=flat-square
